@@ -1,0 +1,6 @@
+entities
+html url encode
+html canvas
+html svg
+html plug ins 
+web workes and see

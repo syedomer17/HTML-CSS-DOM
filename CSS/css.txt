@@ -1,0 +1,69 @@
+what is css?
+
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+what is the css syntax?
+
+selector{
+    property:value
+}
+
+ CSS Selectors
+
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+
+ Universal Selector (*)
+
+The asterisk (*) selector in CSS, known as the universal selector, is used to target and apply 
+styles to all elements on a webpage, regardless of their type or hierarchy. It's especially useful for global styling,
+ such as resetting margins or applying uniform properties across the document.
+
+ Type Selector (element)
+
+A type selector is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in your document. In the example below, we have used the span , em and strong selectors.
+ Try adding a CSS rule to select the <h1> element and change its color to blue: html Copy to Clipboard play.
+
+Class Selector (.class)
+
+What is a class selector in CSS? In CSS, a class selector is formatted as a period (.) character followed by the name of the class. It selects all elements with that class attribute 
+so that unique CSS declarations can be applied to those specific elements without affecting other elements on the page.
+
+D Selector (#id)
+Targets a specific element with a unique ID.
+
+Group Selector (A, B, C)
+Applies styles to multiple elements at once.
+
+Attribute Selectors ([type='text'])
+Targets elements with specific attributes.
+
+Pseudo-classes (:hover, :nth-child(n))
+Used to style elements based on state or position.
+
+Pseudo-elements (::before, ::after)
+Adds content before or after an element.
+
+ Absolute Units (px, cm, mm, in, pt, pc)
+Absolute units in CSS refer to fixed, predefined units of measurement like pixels (px), centimeters (cm), millimeters (mm), inches (in), points (pt), and picas (pc), where each unit represents a specific physical size, regardless
+of the screen or device it's displayed on; essentially, they provide a set, unchanging value for design element
+
+Unit	Description	
+rem	Relative to font-size of the root element	Try it
+vw	Relative to 1% of the width of the viewport*	Try it
+vh	Relative to 1% of the height of the viewport*	Try it
+vmin	Relative to 1% of viewport's* smaller dimension	Try it
+
+ Color Formats (Named, RGB, RGBA, HEX, HSL, HSLA)
+Basically it's all the same, just the representation: RGB: You define how much Red / Green / Blue you want to have in decimal values between 0 and 255 Hex: You define how much Red / Green / Blue you want
+to have in hexadecimal values between 00 and FF HSL: You define a base color, the saturation and lightness.

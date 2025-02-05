@@ -1,0 +1,18 @@
+1.basics of css
+2.css units and color 
+3.css box model 
+4.css display and positions 
+5.css layout and tech 
+6.css typoGraphy 
+7.css backgrounds and border 
+8.css responsive design 
+9.css variable 
+10.css grid vs flex box 
+11.css scroll bars abd overflow 
+12.css framworks and lib 
+  bootstap 
+  tailwied 
+  bulma
+  foundation
+  materialize
+  sass/scss

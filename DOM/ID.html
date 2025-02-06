@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hi">Hello bhai</p>
+    <h1 class="hello">I am omer</h1>
+
+    <h3>hi</h3>
+    <h3>Omer ali</h3>
+
+    <p class="box">Hello 1</p>
+    <p class="box">Hello 2</p>
+    <p class="box">Hello 3</p>
+
+    <div class="box2">hello</div>
+    <div class="box2">hello 1</div>
+    <div class="box2">hello 2</div>
+
+    <h1 class="hee">hi i am Omer</h1>
+    <h1 class="hee">Hi</h1>
+
+    <p class="ptage">Lorem ipsum dolor sit amet.</p>
+
+    <h2 id="h2">Hello I am h2 tag</h2>
+
+    <h6 id="iam">Helllo h6 tage</h6>
+
+    <div id="ali">Hello i am ali</div>
+
+    <button onclick="display()">Hello</button>
+    <button id="btn">Click Me</button>
+    <button id="mouseover">Mouseover</button>
+    <button id="mouseout">mouseout</button>
+    <button id="date">Get Current date</button>
+    <button id="remove">Remove event</button>
+
+    <script>
+        let id = document.getElementById('hi');
+        console.log(id);
+
+        let cl = document.getElementsByClassName("hello");
+        console.log(cl);
+        
+        let h = document.getElementsByTagName("h3");
+
+        for(let i of h){
+            console.log(i);
+        }
+
+        let box = document.querySelector("p.box");
+        console.log(box);
+
+        let box2 = document.querySelectorAll("div.box2")
+        console.log(box2);
+
+        let h1 =  document.getElementById("hee");
+        console.log(h1);
+
+        // console.log(h1.innerHTML);
+
+        // h1.innerHTML = "Syed Omer Ali";
+
+        console.log(h1);
+
+          let h2 = document.getElementById("h2");
+            console.log(h2.outerHTML);
+            h2.outerHTML = "<p>This is now a paragraph</p>";
+            
+            console.log(h2);
+
+            //    let h6tag = document.getElementById("h6tag");
+            //     h6tag.style.color = "blue";
+            //     h6tag.style.fontSize = "20px";
+            //     h6tag.style.fontFamily = "Noto Sans JP, serif";
+           
+                let h4 = document.createElement("h4");
+
+                // let h4contant =  document.createTextNode("I am syed omer ali ");
+
+                //  h4.append(h4Content);
+
+                //  console.log(h4);
+
+                let ali = document.getElementById("ali");
+                    console.log(ali);
+
+                    ali.setAttribute("class", "cfi");
+
+                    function display(){
+                        alert('HI I AM SYED OMER ALI')
+                    }
+
+                     let btn = document.getElementById("btn");
+                        btn.addEventListener("click", () => {
+                            alert("You clicked me");
+                        });
+
+                        // mouseover event
+                        let mouseover = document.getElementById("mouseover");
+                        mouseover.addEventListener("mouseover", () => {
+                            alert("This is a mouseover event");
+                        });
+
+                        //mouseout event
+
+                        let mouseout = document.getElementById("mouseout");
+
+                        mouseout.addEventListener("mouseout", () => {
+                            alert("mouseout bruv");
+                        });
+
+                        // w3Schools example
+
+                        let date = document.getElementById("date");
+
+                        date.addEventListener("click", () => {
+                            date.innerHTML = Date();
+                        });
+
+                        // remove
+
+                        let remove = document.getElementById("remove");
+                        function event() {
+                            alert(`Bye`);
+                        }
+                        remove.addEventListener("click", event);
+                        remove.removeEventListener("click", event);
+
+    </script>
+</body>
+</html>
